@@ -215,7 +215,7 @@
         "label": "Others",
         "threshold": 0
       },
-      "datasource": null,
+      "datasource": "Loki",
       "decimals": null,
       "fieldConfig": {
         "defaults": {},
@@ -254,7 +254,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": null,
+      "datasource": "Loki",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -326,7 +326,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "Loki",
       "fieldConfig": {
         "defaults": {
           "unit": "short"
@@ -507,7 +507,7 @@
           "text": "116c3646-a18c-450e-9abc-680cedbd5843",
           "value": "116c3646-a18c-450e-9abc-680cedbd5843"
         },
-        "datasource": null,
+        "datasource": "Loki",
         "definition": "label_values({uuid=~\".+\"}, uuid)",
         "description": null,
         "error": null,
@@ -648,7 +648,7 @@
     ]
   },
   "timezone": "",
-  "title": "Logging Dashboard via Loki",
+  "title": "LokiGO Dashboard",
   "uid": "fRIvzUZMz",
   "version": 11
 }

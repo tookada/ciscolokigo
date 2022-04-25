@@ -1,0 +1,9 @@
+apiVersion: 1
+datasources:
+- name: Loki
+  url: http://host.docker.internal:3100
+  type: loki
+  orgId: 1
+  access: proxy
+  jsonData:
+    maxLines: 5000
