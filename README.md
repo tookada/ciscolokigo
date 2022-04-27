@@ -30,4 +30,7 @@ The default username and password for Grafana is admin/admin.
 ```
 kubectl create -f https://raw.githubusercontent.com/tookada/ciscolokigo/main/lokigo.yaml
 ```
-The application can be accessed on [http://master or worker IP address:30089](http://master or worker IP address:30089)
+The application can be accessed on [http://master or worker IP address:30089](http://masterorworkerIPaddress:30089)
+
+## License
+This repository is under [GNU General Public License v3.0](https://github.com/tookada/ciscolokigo/blob/main/LICENSE).
