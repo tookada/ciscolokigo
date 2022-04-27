@@ -1210,12 +1210,6 @@ spec:
         env:
         - name: GF_INSTALL_PLUGINS
           value: "grafana-piechart-panel"
-        - name: http_proxy
-          value: http://proxy.esl.cisco.com:8080
-        - name: https_proxy
-          value: http://proxy.esl.cisco.com:8080
-        - name: no_proxy
-          value: loki-service,cisco.com,10.0.0.0/8,127.0.0.1,localhost
         readinessProbe:
           failureThreshold: 3
           httpGet:
