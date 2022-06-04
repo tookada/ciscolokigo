@@ -33,6 +33,12 @@ kubectl create -f https://raw.githubusercontent.com/tookada/ciscolokigo/main/lok
 The application can be accessed on [http://master or worker IP address:30089](http://masterorworkerIPaddress:30089)
 
 ## Notes
+### Run Docker containers on Windows
+You may need to put "/" before $(pwd) like this.
+```
+docker run -v /$(pwd):/mnt/config --name promtail -d -v $(pwd)/log:/var/log grafana/promtail:1.6.0 -config.file=/mnt/config/promtail-config.yaml
+```
+
 ### Your environment needs HTTP proxy
 If your environment needs HTTP proxy, Grafana dashborad import will fail. You need to configure proxy.  
 For Kubernetes:
